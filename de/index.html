@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--
+  data-alt-en ist der relative Pfad zur englischen Fassung dieser Seite.
+  Das Sprachskript unten liest dieses Attribut; es muss daher relativ bleiben,
+  damit die lokale Vorschau funktioniert. Die hreflang-Links sind die
+  absoluten, kanonischen Angaben für Suchmaschinen.
+-->
+<html lang="de" data-alt-en="../index.html">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Psychotherapie in Wien | Catherine Bush</title>
+<meta name="description" content="Psychotherapie in Wien für Einzelpersonen, Paare und Familien. Systemische Familientherapie auf Deutsch und Englisch, einkommensabhängige Honorare.">
+<link rel="canonical" href="https://www.catherinebush.at/de/">
+
+<link rel="alternate" hreflang="en" href="https://www.catherinebush.at/">
+<link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/">
+<link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/">
+
+<script>
+/* Sprachwahl. Inline und vor dem Rendern, damit nie kurz die falsche Sprache
+   aufblitzt.
+     1. Eine aktive Auswahl über den EN/DE-Schalter wird gespeichert und hat
+        immer Vorrang.
+     2. Andernfalls entscheidet einmalig die Spracheinstellung des Browsers.
+   Die Ziele stehen in den data-alt-*-Attributen des Wurzelelements, deshalb ist
+   dieser Block auf allen Seiten identisch und funktioniert auch in der lokalen
+   Vorschau. Ohne verfügbaren Speicher passiert nichts weiter. */
+(function () {
+  var root = document.documentElement;
+  var here = root.lang;
+  var stored = null;
+  try { stored = localStorage.getItem('cb-lang'); } catch (e) {}
+
+  function go(lang) {
+    var target = root.getAttribute('data-alt-' + lang);
+    if (target) location.replace(target);
+  }
+
+  if (stored) {
+    if (stored !== here) go(stored);
+  } else {
+    var pref = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    if ((/^de/i.test(pref) ? 'de' : 'en') !== here) go(/^de/i.test(pref) ? 'de' : 'en');
+  }
+
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('[data-set-lang]') : null;
+    if (el) {
+      try { localStorage.setItem('cb-lang', el.getAttribute('data-set-lang')); } catch (err) {}
+    }
+  });
+})();
+</script>
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.catherinebush.at/de/">
+<meta property="og:locale" content="de_AT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Psychotherapie in Wien | Catherine Bush">
+<meta property="og:description" content="Psychotherapie in Wien für Einzelpersonen, Paare und Familien. Systemische Familientherapie auf Deutsch und Englisch.">
+<meta property="og:image" content="https://www.catherinebush.at/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../images/favicon.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top">Catherine Bush</a>
+    <div class="nav__group">
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links">
+          <li class="nav__hide-sm"><a href="#angebot">Mein Angebot</a></li>
+          <li class="nav__hide-sm"><a href="#ueber-mich">Über mich</a></li>
+          <li><a href="#termin">Termin buchen</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Sprache">
+        <ul class="langswitch">
+          <li><a href="../index.html" lang="en" hreflang="en" data-set-lang="en">EN</a></li>
+          <li><a href="index.html" lang="de" hreflang="de" aria-current="true" data-set-lang="de">DE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="hero__eyebrow">Psychotherapie für Einzelpersonen, Paare und Familien</p>
+      <h1>Psychotherapie in Wien</h1>
+      <p class="hero__lede">
+        Für Einzelpersonen, Paare und Familien.
+      </p>
+      <ul class="facts">
+        <li>Psychotherapie auf Deutsch und Englisch</li>
+        <li>Privatpraxis in Wien</li>
+        <li>Einkommensabhängige Honorare</li>
+      </ul>
+      <a class="btn" href="#termin">Termin buchen</a>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap">
+      <blockquote>
+        &bdquo;Wertgefühle können nur in einer Atmosphäre gedeihen, in der
+        individuelle Unterschiede geschätzt, Fehler toleriert, die Kommunikation
+        offen und die Regeln flexibel sind.&ldquo;
+        <cite>&mdash; Virginia Satir</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="section" id="willkommen">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>Willkommen</h2>
+      </div>
+      <div class="feature">
+        <div class="prose">
+        <p>
+          Ich bin Catherine Bush, Psychotherapeutin in Fachausbildung unter
+          Lehrsupervision. In meiner Praxis in Wien begleite ich Einzelpersonen, Paare
+          und Familien.
+        </p>
+        <p>
+          Meine Arbeit basiert auf der systemischen Familientherapie und dem
+          Verständnis, dass die Herausforderungen, denen wir begegnen, eng mit unserer
+          Lebensgeschichte, unseren Beziehungen und unserem sozialen Umfeld verbunden
+          sind.
+        </p>
+        <p>
+          In der Therapie geht es mir darum, gemeinsam mit Ihnen zu verstehen, was Sie
+          belastet und wie es dazu gekommen ist. Wir betrachten wiederkehrende Muster in
+          Ihren Beziehungen und in Ihrem Umgang mit sich selbst. Manche davon waren früher
+          hilfreich, passen aber vielleicht nicht mehr zu Ihrer heutigen Lebenssituation.
+        </p>
+        <p>
+          Ich verstehe Therapie als einen gemeinsamen Prozess. Sie sind die Expertin oder
+          der Experte für Ihr eigenes Leben. Meine Aufgabe ist es, einen Raum für Neugier,
+          Reflexion und neue Perspektiven zu schaffen. So können Sie neue Möglichkeiten
+          entdecken, sich selbst und anderen zu begegnen.
+        </p>
+        </div>
+
+        <img
+          class="feature__media"
+          src="../images/couch.jpg"
+          alt="Ein grüner Polstersessel in der Praxis, auf der Sitzfläche liegt ein Notizbuch"
+          width="546" height="1120"
+          loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="angebot">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>Wie ich Sie unterstützen kann</h2>
+        <p>
+          Ich begleite Menschen bei Ängsten, Depressionen, ADHS und
+          Beziehungsschwierigkeiten sowie in Zeiten der Veränderung und Unsicherheit.
+          Auch Fragen zu Identität und Zugehörigkeit, wiederkehrende Beziehungsmuster
+          oder der Wunsch, sich selbst und die eigenen Beziehungen besser zu verstehen,
+          können Anlass für eine Therapie sein.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <img class="card__icon" src="../images/first_interview_icon.jpg" alt=""
+               width="121" height="121" loading="lazy">
+          <h3>Erstgespräch</h3>
+          <p>
+            Das Erstgespräch dient dem Kennenlernen und dem Austausch darüber, was Sie
+            zur Therapie führt. Gemeinsam erkunden wir Ihre Anliegen, Ihre aktuelle
+            Situation und den weiteren Kontext Ihres Lebens und Ihrer Beziehungen.
+          </p>
+          <p class="card__fee">50 Euro<a href="#hinweis" aria-label="Hinweis zur Krankenversicherung und zu den Honoraren">*</a></p>
+        </article>
+
+        <article class="card">
+          <img class="card__icon" src="../images/individual_therapy.jpg" alt=""
+               width="121" height="121" loading="lazy">
+          <h3>Einzeltherapie</h3>
+          <p>
+            Einzeltherapie bietet Raum, Herausforderungen, Veränderungen und emotionale
+            Belastungen zu verstehen und neue Wege im Umgang damit zu finden. Gemeinsam
+            betrachten wir auch wiederkehrende Muster sowie die Beziehungen,
+            Lebensumstände und Erfahrungen, die Ihr Bild von sich selbst und Ihren
+            Handlungsmöglichkeiten prägen.
+          </p>
+          <p class="card__fee">Einkommensabhängiges Honorar<a href="#hinweis" aria-label="Hinweis zur Krankenversicherung und zu den Honoraren">*</a></p>
+        </article>
+
+        <article class="card">
+          <img class="card__icon" src="../images/couple_therapy_icon.jpg" alt=""
+               width="121" height="121" loading="lazy">
+          <h3>Paar-/Familientherapie</h3>
+          <p>
+            Paar- und Familientherapie bietet Raum, gemeinsam zu verstehen, wie
+            Kommunikation, Erwartungen und Rollen Ihre Beziehungen prägen. Dabei
+            betrachten wir wiederkehrende Muster zwischen den Beteiligten und wie sie
+            entstanden sind. Gemeinsam suchen wir nach neuen Möglichkeiten, miteinander
+            umzugehen.
+          </p>
+          <p class="card__fee">Einkommensabhängiges Honorar<a href="#hinweis" aria-label="Hinweis zur Krankenversicherung und zu den Honoraren">*</a></p>
+        </article>
+      </div>
+
+      <p class="note" id="hinweis">
+        <strong>* Hinweis zur Krankenversicherung:</strong> Da ich in Fachausbildung
+        unter Lehrsupervision tätig bin, ist eine Kostenerstattung durch die
+        österreichische gesetzliche Krankenversicherung derzeit nicht möglich. Bei
+        privaten oder internationalen Krankenversicherungen können die
+        Erstattungsbedingungen variieren.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="ueber-mich">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>Über mich</h2>
+      </div>
+
+      <div class="about">
+        <img
+          class="about__photo"
+          src="../images/catherine-bush.jpg"
+          alt="Catherine Bush, sitzend in einem grünen Sessel mit einem Notizbuch, lächelnd in die Kamera"
+          width="546" height="748"
+          loading="lazy">
+
+        <div class="prose">
+          <p>
+            Ich bin in den USA geboren und aufgewachsen und lebe seit einigen Jahren in
+            Österreich. Durch meine familiären Verbindungen nach Deutschland bin ich auch
+            mit der deutschen Sprache aufgewachsen. Beide Sprachen und Kulturen sind mir
+            deshalb vertraut.
+          </p>
+          <p>
+            Vor meiner Psychotherapieausbildung habe ich in den USA Musikpädagogik
+            studiert und später als Englisch-Sprachassistentin in Österreich gearbeitet.
+            Dabei konnte ich meine Kommunikationsfähigkeiten vertiefen und Erfahrung im
+            Umgang mit Menschen unterschiedlicher Herkunft sammeln.
+          </p>
+          <p>
+            Der Wunsch, Psychotherapeutin zu werden, hat mich schon lange begleitet.
+            Besonders interessiert mich die Begleitung von Menschen mit Ängsten,
+            Depressionen oder emotionaler Überforderung sowie in herausfordernden
+            Lebensphasen. Auch die Arbeit mit Paaren, die sich voneinander entfernt haben
+            oder wieder zueinanderfinden möchten, liegt mir am Herzen.
+          </p>
+          <p>
+            Menschen in meinem Umfeld beschreiben mich als warmherzig, reflektiert,
+            neugierig und offen &ndash; und als gute Zuhörerin. Ehrlichkeit, Humor und ein
+            respektvolles Miteinander sind mir wichtig. In meiner Praxis möchte ich einen
+            Raum schaffen, in dem Sie offen sprechen können und sich angenommen fühlen.
+          </p>
+          <p>
+            Aus eigener Erfahrung kenne ich die Herausforderungen, die das Leben zwischen
+            verschiedenen Kulturen, Sprachen und Erwartungen mit sich bringen kann. Diese
+            Erfahrung fließt auch in meine Arbeit ein.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="qualifikation">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>Erfahrung &amp; Ausbildung</h2>
+      </div>
+
+      <div class="creds">
+        <div>
+          <h3>Klinische Erfahrung</h3>
+          <ul>
+            <li>
+              Psychotherapeutin in Fachausbildung unter Lehrsupervision
+              <span>Laufend &mdash; Psychotherapeutische Universitätsambulanz,
+              Sigmund Freud PrivatUniversität, Wien, Österreich</span>
+            </li>
+            <li>
+              Psychosoziales Praktikum
+              <span>760 Stunden</span>
+            </li>
+            <li>
+              Klinisches Praktikum
+              <span>300 Stunden &mdash; St. Vinzenz-Krankenhaus, Zams, Österreich</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Ausbildung</h3>
+          <ul>
+            <li>
+              Magisterstudium der Psychotherapiewissenschaft
+              <span>Laufend &mdash; Sigmund Freud PrivatUniversität (SFU), Wien, Österreich</span>
+            </li>
+            <li>
+              Fachspezifikum Systemische Familientherapie
+              <span>Laufend</span>
+            </li>
+            <li>
+              Bakkalaureat Psychotherapiewissenschaft (BA. pth.)
+              <span>Sigmund Freud PrivatUniversität (SFU), Wien, Österreich</span>
+            </li>
+            <li>
+              Psychotherapeutisches Propädeutikum
+              <span>Sigmund Freud PrivatUniversität (SFU), Wien, Österreich</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="termin">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>Termin buchen</h2>
+        <p>
+          Wählen Sie unten einen Termin für ein Erstgespräch, oder melden Sie sich per
+          E-Mail oder telefonisch, wenn Sie vorab eine Frage haben. Bitte geben Sie bei
+          der Buchung keine Angaben zu Ihrer Gesundheit ein &ndash; dafür ist im Gespräch
+          Zeit.
+        </p>
+      </div>
+
+      <div class="booking">
+        <!--
+          TheraPsy-Bookings-Kalender.
+          Die Einbettungs-URL aus dem TheraPsy-Konto unten in src einsetzen und
+          anschließend den Absatz .booking__fallback löschen.
+
+          <iframe
+            src="PASTE_THERAPSY_EMBED_URL_HERE"
+            title="Kalender zur Terminbuchung"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        -->
+        <p class="booking__fallback">
+          Hier erscheint der Online-Terminkalender.<br>
+          Bis dahin erreichen Sie mich per
+          <a href="mailto:praxis@catherinebush.at">E-Mail</a> oder
+          <a href="tel:+4368110573057">Telefon</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="kontakt">
+    <div class="wrap">
+      <hr class="rule">
+      <h2>Bereit für den nächsten Schritt?</h2>
+      <p>
+        Ihre Fragen beantworte ich gerne, bevor Sie ein Erstgespräch buchen.
+      </p>
+      <div class="cta__actions">
+        <a class="btn" href="mailto:praxis@catherinebush.at">praxis@catherinebush.at</a>
+        <a class="btn btn--ghost" href="tel:+4368110573057">+43 681 105 730 57</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h3>Praxis</h3>
+          <p>Catherine Bush Psychotherapie</p>
+          <p>Psychotherapeutin in Fachausbildung unter Lehrsupervision</p>
+        </div>
+
+        <div>
+          <h3>Adresse</h3>
+          <address>
+            Jacquingasse 16/11<br>
+            1030 Wien, Österreich
+          </address>
+        </div>
+
+        <div>
+          <h3>Sprachen</h3>
+          <p>Deutsch und Englisch (Muttersprache)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>&copy; 2026 Catherine Bush</p>
+    <nav class="footer__legal" aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Catherine Bush Psychotherapie",
+  "url": "https://www.catherinebush.at/de/",
+  "email": "praxis@catherinebush.at",
+  "telephone": "+4368110573057",
+  "image": "https://www.catherinebush.at/images/og-image.jpg",
+  "description": "Psychotherapie in Wien für Einzelpersonen, Paare und Familien. Systemische Familientherapie auf Deutsch und Englisch.",
+  "medicalSpecialty": "Psychiatric",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jacquingasse 16/11",
+    "postalCode": "1030",
+    "addressLocality": "Wien",
+    "addressCountry": "AT"
+  },
+  "availableLanguage": ["de", "en"],
+  "founder": {
+    "@type": "Person",
+    "name": "Catherine Grace Bush",
+    "jobTitle": "Psychotherapeutin in Fachausbildung unter Lehrsupervision"
+  }
+}
+</script>
+
+</body>
+</html>

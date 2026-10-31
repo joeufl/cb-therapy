@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!--
+  data-alt-de is the relative path to this page's German counterpart.
+  The language script below reads it, so it must stay relative — that keeps
+  local preview working. The hreflang <link> tags are the absolute, canonical
+  ones search engines read.
+-->
+<html lang="en" data-alt-de="de/index.html">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Native English-Speaking Psychotherapist in Vienna | Catherine Bush</title>
+<meta name="description" content="Native English-speaking psychotherapist in Vienna offering individual, couples, and family therapy. Sessions also available in German, in person and online.">
+<link rel="canonical" href="https://www.catherinebush.at/">
+
+<link rel="alternate" hreflang="en" href="https://www.catherinebush.at/">
+<link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/">
+<link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/">
+
+<script>
+/* Language preference. Inline and before render, so the visitor never sees a
+   flash of the wrong language.
+     1. An explicit choice from the EN/DE switcher is stored and always wins.
+     2. Otherwise the browser's preferred language decides, once.
+   Redirect targets come from the data-alt-* attributes on the root element, so
+   this block is identical on every page and works in local preview. No-ops if
+   storage is unavailable (private windows, blocked site data). */
+(function () {
+  var root = document.documentElement;
+  var here = root.lang;
+  var stored = null;
+  try { stored = localStorage.getItem('cb-lang'); } catch (e) {}
+
+  function go(lang) {
+    var target = root.getAttribute('data-alt-' + lang);
+    if (target) location.replace(target);
+  }
+
+  if (stored) {
+    if (stored !== here) go(stored);
+  } else {
+    var pref = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    if ((/^de/i.test(pref) ? 'de' : 'en') !== here) go(/^de/i.test(pref) ? 'de' : 'en');
+  }
+
+  /* Remember whichever language the visitor picks, so the automatic redirect
+     never fights them afterwards. */
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('[data-set-lang]') : null;
+    if (el) {
+      try { localStorage.setItem('cb-lang', el.getAttribute('data-set-lang')); } catch (err) {}
+    }
+  });
+})();
+</script>
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.catherinebush.at/">
+<meta property="og:title" content="Native English-Speaking Psychotherapist in Vienna | Catherine Bush">
+<meta property="og:description" content="Native English-speaking psychotherapist in Vienna offering individual, couples, and family therapy. Sessions also available in German, in person and online.">
+<meta property="og:image" content="https://www.catherinebush.at/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top">Catherine Bush</a>
+    <div class="nav__group">
+      <nav aria-label="Main">
+        <ul class="nav__links">
+          <li class="nav__hide-sm"><a href="#therapy">Therapy</a></li>
+          <li class="nav__hide-sm"><a href="#about">About me</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Language">
+        <ul class="langswitch">
+          <li><a href="index.html" lang="en" hreflang="en" aria-current="true" data-set-lang="en">EN</a></li>
+          <li><a href="de/index.html" lang="de" hreflang="de" data-set-lang="de">DE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="hero__eyebrow">Psychotherapy for Individuals, Couples, and Families</p>
+      <h1>Native English-Speaking Psychotherapy in Vienna</h1>
+      <p class="hero__lede">
+        For individuals, couples, families, and expats navigating life's transitions.
+      </p>
+      <ul class="facts">
+        <li>Sessions in English and German</li>
+        <li>Private practice in Vienna</li>
+        <li>Affordable rates &mdash; sliding scale available</li>
+      </ul>
+      <a class="btn" href="#schedule">Schedule a session</a>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap">
+      <blockquote>
+        &ldquo;Feelings of worth can flourish only in an atmosphere where individual
+        differences are appreciated, mistakes are tolerated, communication is open,
+        and rules are flexible.&rdquo;
+        <cite>&mdash; Virginia Satir</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="section" id="welcome">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>Welcome</h2>
+      </div>
+      <div class="feature">
+        <div class="prose">
+        <p>
+          I'm Catherine Bush, a native English-speaking psychotherapist in specialist
+          training under teaching supervision (<em lang="de">Psychotherapeutin in
+          Fachausbildung unter Lehrsupervision</em>), offering individual, couple, and
+          family therapy in Vienna.
+        </p>
+        <p>
+          My work is grounded in systemic family therapy and in the understanding that
+          the difficulties we experience rarely exist in isolation. How we feel, relate,
+          and respond to the world is shaped by our relationships, our histories, the
+          roles we have taken on, and the systems we are part of.
+        </p>
+        <p>
+          In therapy, I am interested not only in what is difficult, but also in how it
+          came to make sense. Together, we can look at recurring patterns, relationships,
+          and ways of understanding yourself that may once have been useful but no longer
+          serve you in the same way.
+        </p>
+        <p>
+          I see therapy as a collaborative process rather than a place where someone else
+          tells you who you are or what you should do. My role is to offer a space for
+          curiosity, reflection, and new perspectives &mdash; perhaps even one in which
+          different ways of relating to yourself and to others can become possible.
+        </p>
+        </div>
+
+        <img
+          class="feature__media"
+          src="images/couch.jpg"
+          alt="A green upholstered armchair in the practice, with a notebook resting on the seat"
+          width="546" height="1120"
+          loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="therapy">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>How I can support you</h2>
+        <p>
+          I work with people navigating anxiety, depression, ADHD, relationship
+          difficulties, periods of change or uncertainty, questions of identity and
+          belonging, recurring interpersonal patterns, and the wish to understand
+          themselves and their relationships more deeply.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <img class="card__icon" src="images/first_interview_icon.jpg" alt=""
+               width="121" height="121" loading="lazy">
+          <h3>First Interview</h3>
+          <p>
+            The first interview is a space to get to know each other and talk about what
+            brings you to therapy. Together, we explore your concerns, your current
+            situation, and the wider context of your life and relationships.
+          </p>
+          <p class="card__fee">50 Euros<a href="#insurance" aria-label="See note on insurance and fees">*</a></p>
+        </article>
+
+        <article class="card">
+          <img class="card__icon" src="images/individual_therapy.jpg" alt=""
+               width="121" height="121" loading="lazy">
+          <h3>Individual Therapy</h3>
+          <p>
+            Individual therapy can support you in making sense of challenges, transitions,
+            emotional strain, or patterns that seem hard to shift. The process is
+            collaborative and attentive to the different relationships, environments, and
+            experiences that shape how you see yourself and your possibilities.
+          </p>
+          <p class="card__fee">Income-based fees<a href="#insurance" aria-label="See note on insurance and fees">*</a></p>
+        </article>
+
+        <article class="card">
+          <img class="card__icon" src="images/couple_therapy_icon.jpg" alt=""
+               width="121" height="121" loading="lazy">
+          <h3>Couple &amp; Family Therapy</h3>
+          <p>
+            Couple and family therapy offers a space to explore how communication,
+            expectations, roles, and recurring dynamics affect your relationships. Rather
+            than focusing on one person as the problem, we look at the patterns that
+            develop between people and the context in which they make sense.
+          </p>
+          <p class="card__fee">Income-based fees<a href="#insurance" aria-label="See note on insurance and fees">*</a></p>
+        </article>
+      </div>
+
+      <p class="note" id="insurance">
+        <strong>* A note on insurance:</strong> As I am currently working under
+        supervision, sessions cannot be reimbursed through the Austrian public health
+        insurance system. If you have private or international health insurance, different
+        fees or reimbursement conditions may apply.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>About me</h2>
+      </div>
+
+      <div class="about">
+        <img
+          class="about__photo"
+          src="images/catherine-bush.jpg"
+          alt="Catherine Bush, seated in a green armchair with a notebook, smiling at the camera"
+          width="546" height="748"
+          loading="lazy">
+
+        <div class="prose">
+          <p>
+            I was born and raised in the United States and have been living in Austria for
+            several years. Through family ties to Germany, I also grew up speaking German,
+            which has shaped my connection to both cultures and languages.
+          </p>
+          <p>
+            Before beginning my psychotherapy training, I studied music education in the
+            U.S. and later worked as an English teaching assistant in Austria. That
+            experience helped me develop strong communication skills, patience, and
+            confidence in working closely with people from different backgrounds.
+          </p>
+          <p>
+            I had wanted to become a therapist for several years before formally starting
+            this path. I am especially interested in working with people experiencing
+            anxiety, depression, emotional overwhelm, and difficult life transitions, as
+            well as with couples who feel they have lost their way with one another.
+          </p>
+          <p>
+            People close to me often describe me as warm, thoughtful, curious, open-minded,
+            and a good listener. I value honesty, humor, and creating a space where people
+            can speak openly without feeling judged or pressured.
+          </p>
+          <p>
+            Having built a life in another country myself, I also understand some of the
+            challenges that can come with living between cultures, languages, and different
+            expectations. This is something I bring with me when working with
+            English-speaking and international clients in Austria.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="credentials">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>Experience &amp; Training</h2>
+      </div>
+
+      <div class="creds">
+        <div>
+          <h3>Clinical Experience</h3>
+          <ul>
+            <li>
+              Psychotherapist in Specialist Training under Teaching Supervision
+              <span>Ongoing &mdash; Psychotherapeutic University Outpatient Clinic,
+              Sigmund Freud Private University, Vienna, Austria</span>
+            </li>
+            <li>
+              Psychosocial Internship
+              <span>760 hours</span>
+            </li>
+            <li>
+              Clinical (Psychiatric) Internship
+              <span>300 hours &mdash; St. Vinzenz Hospital, Zams, Austria</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Education and Training</h3>
+          <ul>
+            <li>
+              Magister Program in Psychotherapy Science
+              <span>Ongoing &mdash; Sigmund Freud Private University (SFU), Vienna, Austria</span>
+            </li>
+            <li>
+              Psychotherapeutic Specialisation (<span lang="de">Fachspezifikum</span>) in
+              Systemic Family Therapy
+              <span>Ongoing</span>
+            </li>
+            <li>
+              Bachelor in Psychotherapy Science (BA. pth.)
+              <span>Sigmund Freud Private University (SFU), Vienna, Austria</span>
+            </li>
+            <li>
+              Psychotherapeutic Propaedeutic Course
+              <span>Sigmund Freud Private University (SFU), Vienna, Austria</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="schedule">
+    <div class="wrap">
+      <div class="section__head">
+        <hr class="rule">
+        <h2>Schedule a session</h2>
+        <p>
+          Choose a time below for a first interview, or reach out by email or phone if
+          you would rather ask a question first. Please don't include details about your
+          health in the booking form &mdash; we can talk about all of that in session.
+        </p>
+      </div>
+
+      <div class="booking">
+        <!--
+          TheraPsy Bookings calendar.
+          Paste the embed URL from the TheraPsy account into src below, then delete
+          the .booking__fallback paragraph underneath.
+
+          <iframe
+            src="PASTE_THERAPSY_EMBED_URL_HERE"
+            title="Appointment booking calendar"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        -->
+        <p class="booking__fallback">
+          The online booking calendar will appear here.<br>
+          In the meantime, please get in touch by
+          <a href="mailto:praxis@catherinebush.at">email</a> or
+          <a href="tel:+4368110573057">phone</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="wrap">
+      <hr class="rule">
+      <h2>Get in touch</h2>
+      <p>
+        I'm happy to answer any questions you have before booking a first interview.
+      </p>
+      <div class="cta__actions">
+        <a class="btn" href="mailto:praxis@catherinebush.at">praxis@catherinebush.at</a>
+        <a class="btn btn--ghost" href="tel:+4368110573057">+43 681 105 730 57</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h3>Practice</h3>
+          <p>Catherine Bush Psychotherapy</p>
+          <p>Psychotherapist in Specialist Training under Teaching Supervision</p>
+        </div>
+
+        <div>
+          <h3>Address</h3>
+          <address>
+            Jacquingasse 16/11<br>
+            1030 Vienna, Austria
+          </address>
+        </div>
+
+        <div>
+          <h3>Languages</h3>
+          <p>English (native) and German</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>&copy; 2026 Catherine Bush</p>
+    <nav class="footer__legal" aria-label="Legal">
+      <a href="imprint.html">Imprint</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Catherine Bush Psychotherapy",
+  "url": "https://www.catherinebush.at/",
+  "email": "praxis@catherinebush.at",
+  "telephone": "+4368110573057",
+  "image": "https://www.catherinebush.at/images/og-image.jpg",
+  "description": "Native English-speaking psychotherapist in Vienna offering individual, couples, and family therapy. Sessions also available in German.",
+  "medicalSpecialty": "Psychiatric",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jacquingasse 16/11",
+    "postalCode": "1030",
+    "addressLocality": "Vienna",
+    "addressCountry": "AT"
+  },
+  "availableLanguage": ["en", "de"],
+  "founder": {
+    "@type": "Person",
+    "name": "Catherine Grace Bush",
+    "jobTitle": "Psychotherapist in Specialist Training under Teaching Supervision"
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="de" data-alt-en="../privacy.html">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Datenschutzerklärung | Catherine Bush Psychotherapie</title>
+<meta name="description" content="Information über die Verarbeitung personenbezogener Daten beim Besuch von catherinebush.at, bei der Online-Terminbuchung und bei Kontaktaufnahme per E-Mail.">
+<link rel="canonical" href="https://www.catherinebush.at/de/datenschutz.html">
+<meta name="robots" content="index, follow">
+
+<link rel="alternate" hreflang="en" href="https://www.catherinebush.at/privacy.html">
+<link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/datenschutz.html">
+<link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/privacy.html">
+
+<script>
+/* Siehe Kommentar in de/index.html. */
+(function () {
+  var root = document.documentElement;
+  var here = root.lang;
+  var stored = null;
+  try { stored = localStorage.getItem('cb-lang'); } catch (e) {}
+
+  function go(lang) {
+    var target = root.getAttribute('data-alt-' + lang);
+    if (target) location.replace(target);
+  }
+
+  if (stored) {
+    if (stored !== here) go(stored);
+  } else {
+    var pref = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    if ((/^de/i.test(pref) ? 'de' : 'en') !== here) go(/^de/i.test(pref) ? 'de' : 'en');
+  }
+
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('[data-set-lang]') : null;
+    if (el) {
+      try { localStorage.setItem('cb-lang', el.getAttribute('data-set-lang')); } catch (err) {}
+    }
+  });
+})();
+</script>
+
+<link rel="icon" href="../images/favicon.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!--
+  ============================================================================
+  WICHTIG — DIESE ERKLÄRUNG IST FÜR DIESE WEBSITE NOCH NICHT ZUTREFFEND.
+
+  Der Text stammt wörtlich von der Wix-Seite. Zwei Punkte sind offen:
+
+  1) HOSTING. Abschnitte 2 und 7 nennen Wix als Hoster. Nach dem Umzug auf
+     GitHub Pages ist das falsch — siehe die gleichlautende Notiz in
+     ../privacy.html, die Punkt für Punkt auflistet, was zu ändern ist
+     (Hoster, Drittlandübermittlung, Google Fonts, Cookies).
+
+  2) FEHLENDE ABSCHNITTE. Die deutsche Fassung ist gegenüber der englischen
+     unvollständig — das war schon auf der Wix-Seite so:
+       - Abschnitt 3 "Cookies und Website-Analyse" fehlt vollständig;
+         die Nummerierung springt von 2 auf 4.
+       - In Abschnitt 4 fehlt der Unterabschnitt zur Verarbeitung beim Laden
+         des Buchungskalenders (Betriebssystem, Datum/Uhrzeit der
+         Serveranfrage, Hinweis auf AWS-Infrastruktur in der EU).
+     Beide Lücken sind unten als Kommentar an der richtigen Stelle markiert.
+     Da dies ein Rechtstext ist, habe ich hier nichts selbst formuliert —
+     Catherine sollte die fehlenden Abschnitte aus der englischen Fassung
+     übernehmen bzw. fachlich prüfen lassen.
+  ============================================================================
+-->
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html">Catherine Bush</a>
+    <div class="nav__group">
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links">
+          <li class="nav__hide-sm"><a href="index.html#angebot">Mein Angebot</a></li>
+          <li class="nav__hide-sm"><a href="index.html#ueber-mich">Über mich</a></li>
+          <li><a href="index.html#termin">Termin buchen</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Sprache">
+        <ul class="langswitch">
+          <li><a href="../privacy.html" lang="en" hreflang="en" data-set-lang="en">EN</a></li>
+          <li><a href="datenschutz.html" lang="de" hreflang="de" aria-current="true" data-set-lang="de">DE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="legal">
+  <div class="wrap legal__inner">
+
+    <h1>Datenschutzerklärung</h1>
+    <p class="legal__meta">Stand: 11. Oktober 2026</p>
+
+    <p>
+      Der Schutz Ihrer personenbezogenen Daten ist mir ein besonderes Anliegen. Ich
+      verarbeite personenbezogene Daten unter Beachtung der Datenschutz-Grundverordnung
+      (DSGVO), des österreichischen Datenschutzgesetzes (DSG) und der einschlägigen
+      berufsrechtlichen Bestimmungen.
+    </p>
+    <p>
+      Diese Datenschutzerklärung informiert Sie über die Verarbeitung Ihrer Daten beim
+      Besuch meiner Website www.catherinebush.at, bei der Nutzung der eingebundenen
+      Online-Terminbuchung sowie bei der Kontaktaufnahme per E-Mail.
+    </p>
+
+    <h2>1. Verantwortliche</h2>
+    <address>
+      Catherine Grace Bush<br>
+      Psychotherapeutin in Fachausbildung unter Lehrsupervision<br>
+      Jacquingasse 16/11<br>
+      1030 Wien<br>
+      Österreich<br>
+      E-Mail: <a href="mailto:praxis@catherinebush.at">praxis@catherinebush.at</a>
+    </address>
+
+    <h2>2. Bereitstellung und Hosting der Website</h2>
+    <p>Meine Website wird mit dem Website-Dienst Wix erstellt und betrieben.</p>
+    <p>
+      Anbieter:<br>
+      Wix.com Ltd.<br>
+      40 Namal Tel Aviv St.<br>
+      Tel Aviv 6350671<br>
+      Israel
+    </p>
+    <p>
+      Beim Aufruf der Website werden technisch erforderliche Daten verarbeitet. Dazu
+      können insbesondere folgende Informationen gehören:
+    </p>
+    <ul>
+      <li>IP-Adresse</li>
+      <li>Datum und Uhrzeit des Zugriffs</li>
+      <li>aufgerufene Seiten und Dateien</li>
+      <li>Browsertyp und Browserversion</li>
+      <li>Betriebssystem und Geräteinformationen</li>
+      <li>Referrer-URL</li>
+      <li>technische Verbindungs- und Fehlerdaten</li>
+    </ul>
+    <p>
+      Diese Daten werden verarbeitet, um die Website bereitzustellen, ihre
+      Funktionsfähigkeit zu gewährleisten und Sicherheitsrisiken sowie missbräuchliche
+      Zugriffe zu erkennen.
+    </p>
+    <p>
+      Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse besteht
+      im sicheren und zuverlässigen Betrieb meiner Website.
+    </p>
+    <p>
+      Wix kann für den Betrieb der Website weitere technische Dienstleister und
+      Unterauftragsverarbeiter einsetzen.
+    </p>
+    <p>
+      Dabei kann es zu internationalen Datenübermittlungen kommen. Für Israel besteht ein
+      Angemessenheitsbeschluss der Europäischen Kommission gemäß Art. 45 DSGVO. Soweit
+      personenbezogene Daten in andere Drittländer übermittelt werden, müssen die jeweils
+      erforderlichen datenschutzrechtlichen Voraussetzungen und Garantien vorliegen,
+      insbesondere gegebenenfalls Standardvertragsklauseln gemäß Art. 46 DSGVO.
+    </p>
+    <p>
+      Weitere Informationen:
+      <a href="https://www.wix.com/about/privacy">https://www.wix.com/about/privacy</a>
+    </p>
+
+    <!--
+      LÜCKE 1: Hier fehlt Abschnitt 3 "Cookies und Website-Analyse".
+      Die englische Fassung (../privacy.html, Abschnitt 3) enthält ihn.
+      Nach dem Umzug auf GitHub Pages setzt diese Website keine Cookies und
+      verwendet keine Analysedienste — der Abschnitt wird also kürzer als im
+      englischen Original, muss aber vorhanden sein.
+    -->
+
+    <h2>4. Online-Terminbuchung über TheraPsy Bookings</h2>
+
+    <!--
+      LÜCKE 2: Hier fehlt der Unterabschnitt "Verarbeitung beim Laden des
+      Kalenders" (englische Fassung: "Processing when the calendar loads").
+      Inhalt dort: Betriebssystem, Datum und Uhrzeit der Serveranfrage;
+      kein Tracking/keine Cookies laut Anbieter; Betrieb auf
+      AWS-Infrastruktur innerhalb der EU.
+    -->
+
+    <p>
+      Wenn Sie einen Termin über den Kalender anfragen, werden insbesondere folgende
+      Daten verarbeitet:
+    </p>
+    <ul>
+      <li>Vor- und Nachname</li>
+      <li>E-Mail-Adresse</li>
+      <li>ausgewählter Termin</li>
+    </ul>
+    <p>
+      Die Verarbeitung erfolgt zur Bearbeitung der Terminanfrage, zur Terminorganisation
+      und zur damit zusammenhängenden Kommunikation.
+    </p>
+    <p>
+      Rechtsgrundlage für die zur Terminanbahnung erforderliche Verarbeitung ist
+      Art. 6 Abs. 1 lit. b DSGVO.
+    </p>
+    <p>
+      Soweit aus der Buchung oder zusätzlichen Angaben Gesundheitsdaten hervorgehen und
+      diese verarbeitet werden, ist zusätzlich eine entsprechende Rechtsgrundlage gemäß
+      Art. 9 Abs. 2 DSGVO erforderlich.
+    </p>
+    <p>
+      Bitte geben Sie bei der Online-Terminbuchung keine ausführlichen Informationen zu
+      Diagnosen, gesundheitlichen Beschwerden oder anderen besonders sensiblen Umständen
+      ein.
+    </p>
+    <p>
+      Nach den veröffentlichten Informationen von TheraPsy Bookings werden die Daten der
+      Buchungsanfrage im Buchungssystem grundsätzlich bis zum Termin gespeichert und
+      anschließend automatisch gelöscht. Eine gegebenenfalls erforderliche weitere
+      Verarbeitung für Terminverwaltung, Behandlungsdokumentation oder gesetzliche
+      Aufbewahrungspflichten bleibt davon unberührt.
+    </p>
+    <p>
+      Weitere Informationen zur Datenverarbeitung durch den Anbieter finden Sie unter:
+      <a href="https://www.therapsy.at/datenschutzerklaerungen/bookings">https://www.therapsy.at/datenschutzerklaerungen/bookings</a>
+    </p>
+
+    <h2>5. Kontaktaufnahme per E-Mail</h2>
+    <p>
+      Wenn Sie mich per E-Mail kontaktieren, verarbeite ich die von Ihnen freiwillig
+      übermittelten Daten, insbesondere Ihren Namen, Ihre E-Mail-Adresse und den Inhalt
+      Ihrer Nachricht.
+    </p>
+    <p>
+      Diese Verarbeitung erfolgt, um Ihre Anfrage zu bearbeiten, mit Ihnen zu
+      kommunizieren und gegebenenfalls einen Termin zu vereinbaren.
+    </p>
+    <p>
+      Rechtsgrundlage ist bei Anfragen zur Anbahnung eines Behandlungsverhältnisses
+      Art. 6 Abs. 1 lit. b DSGVO. Bei sonstigen Anfragen kann die Verarbeitung auf
+      Art. 6 Abs. 1 lit. f DSGVO beruhen.
+    </p>
+    <p>
+      Soweit Gesundheitsdaten verarbeitet werden, ist zusätzlich eine entsprechende
+      Rechtsgrundlage gemäß Art. 9 Abs. 2 DSGVO erforderlich.
+    </p>
+    <p>Für meine berufliche E-Mail-Kommunikation verwende ich Proton Mail.</p>
+    <p>
+      Bitte beachten Sie, dass die Vertraulichkeit einer E-Mail-Übertragung auch von
+      Ihrem eigenen E-Mail-Anbieter und den verwendeten Sicherheitseinstellungen abhängt.
+    </p>
+    <p>
+      Ich empfehle deshalb, bei einer ersten Anfrage keine ausführlichen
+      Gesundheitsinformationen oder sensiblen medizinischen Dokumente per gewöhnlicher
+      E-Mail zu übermitteln.
+    </p>
+    <p>
+      Anfragen, die nicht zu einer Behandlung führen, werden gelöscht, sobald ihre
+      weitere Aufbewahrung nicht mehr erforderlich ist, sofern keine gesetzlichen
+      Aufbewahrungspflichten oder andere rechtmäßige Gründe entgegenstehen.
+    </p>
+
+    <h2>6. Verarbeitung von Behandlungsdaten</h2>
+    <p>
+      Im Rahmen einer psychotherapeutischen Behandlung werden personenbezogene Daten
+      einschließlich besonderer Kategorien personenbezogener Daten, insbesondere
+      Gesundheitsdaten, verarbeitet.
+    </p>
+    <p>
+      Dies dient der psychotherapeutischen Behandlung, Terminorganisation, gesetzlich
+      vorgeschriebenen Dokumentation und Abrechnung.
+    </p>
+    <p>
+      Die Verarbeitung erfolgt auf Grundlage der jeweils anwendbaren Bestimmungen des
+      Art. 6 DSGVO sowie für Gesundheitsdaten insbesondere Art. 9 Abs. 2 lit. h DSGVO in
+      Verbindung mit dem österreichischen Berufsrecht.
+    </p>
+    <p>
+      Die psychotherapeutische Dokumentation erfolgt mit der Praxissoftware TheraPsy auf
+      einem ausschließlich von mir verwendeten MacBook. Zur Sicherung der lokal
+      gespeicherten Dokumentation werden Backup-Dateien in Proton Drive aufbewahrt.
+    </p>
+    <p>
+      Unterzeichnete Vereinbarungen und sonstige Unterlagen in Papierform werden in einem
+      versperrten Aktenschrank in der Praxis aufbewahrt.
+    </p>
+    <p>
+      Als Psychotherapeutin in Fachausbildung unter Lehrsupervision unterliege ich der
+      berufsrechtlichen Verschwiegenheitspflicht gemäß § 45 Psychotherapiegesetz 2024.
+    </p>
+    <p>
+      Die Lehrsupervision wird im Rahmen meiner Fachausbildung an der Sigmund Freud
+      PrivatUniversität organisiert und unter Beachtung der geltenden Verschwiegenheits-
+      und Datenschutzpflichten durchgeführt.
+    </p>
+    <p>
+      Die psychotherapeutische Dokumentation wird gemäß § 44 PThG 2024 grundsätzlich zehn
+      Jahre nach Beendigung der Behandlung aufbewahrt.
+    </p>
+    <p>
+      Patientinnen und Patienten erhalten vor Beginn der Behandlung eine gesonderte
+      Datenschutzinformation über die Verarbeitung ihrer Behandlungsdaten.
+    </p>
+
+    <h2>7. Empfänger und Auftragsverarbeiter</h2>
+    <p>
+      Personenbezogene Daten werden nur im erforderlichen und gesetzlich zulässigen
+      Umfang verarbeitet oder an Dritte offengelegt.
+    </p>
+    <p>Zu den eingesetzten technischen Dienstleistern gehören insbesondere:</p>
+    <ul>
+      <li>Wix für die Bereitstellung und den technischen Betrieb der Website</li>
+      <li>TheraPsy Bookings für die Online-Terminorganisation</li>
+      <li>Proton Mail für die berufliche E-Mail-Kommunikation</li>
+      <li>Proton Drive für die verschlüsselte Datensicherung</li>
+    </ul>
+    <p>
+      Soweit Dienstleister personenbezogene Daten als Auftragsverarbeiter verarbeiten,
+      erfolgt ihre Einbindung nach Maßgabe von Art. 28 DSGVO.
+    </p>
+    <p>
+      Eine Offenlegung von vertraulichen Behandlungsinformationen an andere Personen oder
+      Stellen erfolgt nur auf entsprechender rechtlicher Grundlage.
+    </p>
+
+    <h2>8. Speicherdauer</h2>
+    <p>
+      Personenbezogene Daten werden nur so lange gespeichert, wie dies für den jeweiligen
+      Verarbeitungszweck erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen.
+    </p>
+    <p>Für die verschiedenen Datenarten gelten insbesondere folgende Kriterien:</p>
+    <ul>
+      <li>
+        <strong>Website-Zugriffsdaten:</strong> Aufbewahrung entsprechend den technisch
+        erforderlichen und rechtlich zulässigen Protokollierungsfristen des
+        Hosting-Anbieters.
+      </li>
+      <li>
+        <strong>Terminanfragen:</strong> Aufbewahrung im Buchungssystem entsprechend den
+        veröffentlichten Löschverfahren des Anbieters. Soweit Daten in andere rechtmäßige
+        Dokumentationsprozesse übernommen werden, gelten die dafür maßgeblichen Fristen.
+      </li>
+      <li>
+        <strong>E-Mail-Anfragen:</strong> Aufbewahrung bis zur abschließenden Bearbeitung
+        der Anfrage und darüber hinaus nur bei entsprechender rechtlicher Grundlage.
+      </li>
+      <li>
+        <strong>Psychotherapeutische Dokumentation:</strong> Grundsätzlich zehn Jahre nach
+        Beendigung der psychotherapeutischen Behandlung gemäß § 44 PThG 2024.
+      </li>
+    </ul>
+
+    <h2>9. Ihre Rechte</h2>
+    <p>
+      Sie haben nach Maßgabe der gesetzlichen Voraussetzungen insbesondere folgende
+      Rechte:
+    </p>
+    <ul>
+      <li>Recht auf Auskunft gemäß Art. 15 DSGVO</li>
+      <li>Recht auf Berichtigung gemäß Art. 16 DSGVO</li>
+      <li>Recht auf Löschung gemäß Art. 17 DSGVO</li>
+      <li>Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO</li>
+      <li>Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO</li>
+      <li>Recht auf Widerspruch gemäß Art. 21 DSGVO</li>
+      <li>Recht auf Widerruf einer Einwilligung gemäß Art. 7 Abs. 3 DSGVO</li>
+    </ul>
+    <p>
+      Zur Wahrnehmung Ihrer Rechte können Sie mich unter
+      <a href="mailto:praxis@catherinebush.at">praxis@catherinebush.at</a> kontaktieren.
+    </p>
+    <p>
+      Bitte beachten Sie, dass gesetzlichen Aufbewahrungspflichten oder anderen
+      rechtmäßigen Gründen für eine weitere Speicherung im Einzelfall Vorrang zukommen
+      kann.
+    </p>
+    <p>
+      Sie haben außerdem das Recht, Beschwerde bei der österreichischen
+      Datenschutzbehörde einzubringen.
+    </p>
+    <p>
+      Österreichische Datenschutzbehörde<br>
+      Barichgasse 40&ndash;42<br>
+      1030 Wien<br>
+      Website: <a href="https://www.dsb.gv.at/">https://www.dsb.gv.at/</a>
+    </p>
+
+    <h2>10. Erforderlichkeit der Datenbereitstellung</h2>
+    <p>
+      Für den bloßen Besuch der Website ist keine aktive Angabe Ihres Namens oder Ihrer
+      Kontaktdaten erforderlich. Technisch notwendige Verbindungsdaten können jedoch
+      automatisch verarbeitet werden.
+    </p>
+    <p>
+      Für eine Online-Terminbuchung sind zumindest jene personenbezogenen Angaben
+      erforderlich, die eine Zuordnung und Bearbeitung der Terminanfrage ermöglichen.
+    </p>
+    <p>
+      Wenn diese Angaben nicht bereitgestellt werden, kann die Online-Terminbuchung
+      gegebenenfalls nicht durchgeführt werden.
+    </p>
+    <p>
+      Eine Verpflichtung, bereits bei der Terminbuchung ausführliche
+      Gesundheitsinformationen mitzuteilen, besteht nicht.
+    </p>
+
+    <h2>11. Automatisierte Entscheidungsfindung</h2>
+    <p>
+      Im Rahmen meiner eigenen Bearbeitung von Terminanfragen und psychotherapeutischen
+      Behandlungsentscheidungen erfolgt keine automatisierte Entscheidungsfindung
+      einschließlich Profiling im Sinne des Art. 22 DSGVO.
+    </p>
+
+    <h2>12. Änderungen dieser Datenschutzerklärung</h2>
+    <p>
+      Diese Datenschutzerklärung wird aktualisiert, wenn sich die technischen Funktionen
+      der Website, die eingesetzten Dienstleister, die Datenverarbeitung oder die
+      rechtlichen Rahmenbedingungen ändern.
+    </p>
+
+    <a class="legal__back" href="index.html">&larr; Zurück zur Startseite</a>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>&copy; 2026 Catherine Bush</p>
+    <nav class="footer__legal" aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
