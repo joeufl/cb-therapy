@@ -1,0 +1,6 @@
+# https://www.catherinebush.at/
+User-agent: *
+Allow: /
+Disallow: /archive/
+
+Sitemap: https://www.catherinebush.at/sitemap.xml

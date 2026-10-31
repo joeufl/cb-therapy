@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Six pages, each in English and German. Every <url> carries the full set of
+  xhtml:link alternates (en, de, x-default), mirroring the <link rel="alternate"
+  hreflang="..."> tags in each page's <head>. Google requires the set to be
+  complete and self-referential: each page lists itself alongside its siblings.
+  Update <lastmod> when a page's content changes.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.catherinebush.at/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.catherinebush.at/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/"/>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.catherinebush.at/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.catherinebush.at/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/"/>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.catherinebush.at/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.catherinebush.at/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/imprint.html"/>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.catherinebush.at/de/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.catherinebush.at/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/imprint.html"/>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.catherinebush.at/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.catherinebush.at/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/privacy.html"/>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.catherinebush.at/de/datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.catherinebush.at/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.catherinebush.at/de/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.catherinebush.at/privacy.html"/>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
